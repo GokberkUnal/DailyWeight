@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'Models/weight.dart';
 
 
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -23,6 +24,24 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Weight> _userWeights = [
+    Weight(
+      id:'w1',
+      weight: 105.5,
+      date: DateTime.now().subtract(Duration(days: 1)),
+
+    ),
+    
+    Weight(
+      id:'w1',
+      weight: 100.5,
+      date: DateTime.now(),
+    ),
+    Weight(
+      id:'w1',
+      weight: 80.5,
+      date: DateTime.now().subtract(Duration(days: -1))
+
+    ),
     
   ];
 
@@ -49,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     
     return Scaffold(
       appBar: AppBar(
-        title: Text("Daily Weight"),
+        title: Text("Daily Weight",style: TextStyle(fontSize: MediaQuery.of(context).size.height*0.03),),
         actions: <Widget>[
          /* IconButton(
               onPressed: () {},

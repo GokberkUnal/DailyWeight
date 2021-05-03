@@ -50,7 +50,7 @@ class _WeightListState extends State<WeightList> {
                   SizedBox(width: 0.25*MediaQuery.of(context).size.width),
                   Container(
                     child: Text(
-                      DateFormat.yMMMd().format(DateTime.now()),
+                      DateFormat.yMMMd().format(widget.weights[i].date),
                       style: TextStyle(
                         fontSize: 20,
                       ),
