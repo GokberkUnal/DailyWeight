@@ -1,5 +1,5 @@
 # DailyWeight
 
-This flutter project keep track of your weigth on a daily and reflect on the chart
+This flutter project keeps the track of your weigth on a daily basis and reflects it on the chart
 
 
